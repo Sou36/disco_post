@@ -27,10 +27,12 @@ with sync_playwright() as p:
      page.locator(f'div[role="textbox"]').first.click()
      page.wait_for_timeout(1000)
      if randomumu == "y":
-      randomtango = random.randint(0,len(tango))
-      page.fill(f"{randomtango}")
+      randomsuuji = int(random.randint(0,len(tango) - 1))
+      page.fill('div[role="textbox"]',tango[randomsuuji])
+      page.press('div[role="textbox"]', "Enter")
      if randomumu == "n":
-      page.fill(f"{tango}")
+      page.fill('div[role="textbox"]',f"{tango}")
+      page.press('div[role="textbox"]', "Enter")
      page.wait_for_timeout(14000)
     browser.close()
 
