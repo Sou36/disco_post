@@ -1,4 +1,4 @@
-# Group Spam
+# disco_post
 
 ### ～注意～
 
@@ -34,6 +34,7 @@ playwright install
 ```
 
 すれば簡単に入れれます。過去に入れたことがあればしなくていいです。
+
 
 
 
